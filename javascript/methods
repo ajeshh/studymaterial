@@ -1,0 +1,104 @@
+###Array.length
+Length of an array
+```javascript
+var arr = [13, 14, 15];
+console.log(arr.length); // Result: [3]
+```
+
+##Array mutating methods
+
+###Array.shift
+Removes the first element from the front of an array
+```javascript
+var arr = [13, 14, 15];
+arr.shift();
+console.log(arr); // Result: [14, 15]
+```
+
+###Array.unshift
+Adds an element to the front of an array
+```javascript
+var arr = [13, 14, 15];
+arr.unshift(12);
+console.log(arr); // Result: [12, 13, 14, 15]
+```
+
+###Array.pop
+Removes an element from the back of an array
+```javascript
+var arr = [13, 14, 15];
+arr.pop();
+console.log(arr); // Result: [13, 14]
+```
+
+###Array.push
+Adds an element from the back of an array
+```javascript
+var arr = [13, 14, 15];
+arr.push(16);
+console.log(arr); // Result: [13, 14, 15, 16]
+```
+
+###Array.Concat
+can connect multiple arrays or values into one array
+```javascript
+var arr = [13, 14, 15];
+var arr2 = [16, 17, 18];
+var newArr = arr.concat(arr2);
+console.log(newArr); // Result: [13, 14, 15, 16, 17, 18]
+```
+
+###Array.reverse
+Reverses an array
+```javascript
+var arr = [13, 14, 15];
+arr.reverse();
+console.log(arr); // Result: [15, 14, 13]
+```
+
+
+###Array.splice
+Can remove or insert new elements into an array. 
+```javascript
+var arr = [13, 14, 15, 16];
+
+var added = arr.splice[2, 0, "cat"]
+// Result: [13, 14, "cat", 15, 16]
+
+var removed = arr.splice[2, 1]
+// Result: [13, 14, 15, 16]
+
+var addRemove = arr.splice[0, 1, "start"]
+// Result: ["start", 14, 15, 16]
+
+var removeAdd = arr.splice[0, 4, "A", "B", "C", "D", "E", "F", "G"]
+// Result: ["A", "B", "C", "D", "E", "F", "G"]
+
+var removeBeyond = arr.splice[2, Number.MAX_VALUE]
+// Result: ["A", "B", "C"]
+```
+
+###Array.toString
+Can convert an array and its elements to a string
+```javascript
+var arr = ["A", "B", "C"];
+var arrString = arr.toString();
+console.log(arrString); //Result = "131415"
+
+###Array.map
+
+
+
+###Array.sort
+Sorts an array in place.
+```javascript
+var arr = [3, 1, 2];
+console.log(arr.sort()); // Result = "[1, 2, 3]"
+
+var arrAlpha = ["James", "tom", "aj"]
+console.log(arrAlpha.sort()); // Result = ["James", "aj", "tom"]
+// Capital letters over lowercase
+
+array.reverse();
+
+###Array.indexOf
